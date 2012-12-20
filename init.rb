@@ -1,0 +1,1 @@
+require 'auto_convert_html_fields'
