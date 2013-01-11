@@ -19,9 +19,12 @@ module AutoConvertHtmlFields
 				cattr_accessor :achf_convert_newlines
 				self.achf_convert_newlines = options[:convert_newlines] || false
 				
-				content_columns.each do |c|
-					if self.column_names.include?("#{c.name}_html")
-						send :attr_protected, "#{c.name}_html".to_sym
+				
+				unless options.include?(:dont_protect_html_fields)
+					content_columns.each do |c|
+						if self.column_names.include?("#{c.name}_html")
+							send :attr_protected, "#{c.name}_html".to_sym
+						end
 					end
 				end
 			end
