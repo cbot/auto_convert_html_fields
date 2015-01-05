@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "auto_convert_html_fields"
   s.version     = AutoConvertHtmlFields::VERSION
   s.authors     = "cbot"
-  s.email       = "kai@cbot-gsm.de"
+  s.email       = "derkai@gmail.com"
   s.homepage    = "http://www.der-mtv.de"
   s.summary     = "converts html fields ;-)"
   s.description = "converts html fields ;-)"
